@@ -12,7 +12,7 @@ RUN yum update -y \
     && yum install -y \
         curl.x86_64 curl-devel.i386 gcc.x86_64 gcc-c++.x86_64 gdb.x86_64 make.x86_64 \
         glibc-devel.x86_64 glibc-devel.i386 libstdc++-devel.x86_64 libstdc++-devel.i386 \
-        mysql55-mysql-devel.i386 zlib-devel.i386 flex.x86_64 perl.x86_64 \
+        mysql-devel.i386 zlib-devel.i386 flex.x86_64 perl.x86_64 \
     && yum clean all
 
 # Add bjam & p4 to /usr/local/bin & set executable permissions
